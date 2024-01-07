@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class TextContent extends StatelessWidget {
-  const TextContent({super.key});
+  // here this.outputText means If constructor is called with any string argument
+  //  key then it will be passed to class's outputText property
+  const TextContent(this.outputText, {super.key});
 
+  final String outputText;
   @override
   Widget build(context) {
-    return const Text(
-      "Hello World, I am Gopi",
-      style: TextStyle(
+    return Text(
+      outputText,
+      style: const TextStyle(
         color: Colors.white,
         fontSize: 28,
       ),
