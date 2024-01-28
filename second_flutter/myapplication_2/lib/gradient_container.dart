@@ -12,6 +12,10 @@ class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.colors});
   // here super.key means If constructor is called with named argument key then
   // it will be passed to super's key named argument
+  const GradientContainer.purple({super.key})
+      : color1 = Colors.deepPurple,
+        color2 = Colors.indigo;
+
   final List<Color> colors;
 
   @override
